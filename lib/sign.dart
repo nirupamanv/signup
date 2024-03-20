@@ -19,31 +19,35 @@ class _UserState extends State<User> {
             Text('create an account,Its free',style: TextStyle(fontSize: 20),),
 
             SizedBox(height: 20,),
+            Align(alignment: Alignment.centerLeft,child: Text('Username'),),
             TextField(
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(),
-                hintText: 'Username',
+
               ),
             ),
             SizedBox(height: 20,),
+            Align(alignment: Alignment.centerLeft,child: Text('Email'),),
           TextField(
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(),
-              hintText: 'Email',
+
             ),
           ),
           SizedBox(height: 20,),
+            Align(alignment: Alignment.centerLeft,child: Text('Password'),),
           TextField(
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(),
-              hintText: 'Password',
+
             ),
           ),
           SizedBox(height: 20,),
+            Align(alignment: Alignment.centerLeft,child: Text('Confirm Password'),),
           TextField(
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(),
-              hintText: 'Confirm Password',
+
             ),
           ),
             SizedBox(height: 20,),
