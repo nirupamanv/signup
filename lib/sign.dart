@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/login.dart';
 class User extends StatefulWidget {
   const User({Key? key}) : super(key: key);
 
@@ -58,8 +59,12 @@ class _UserState extends State<User> {
 
             SizedBox(height: 20,),
 
-            TextButton(onPressed: (){}, child: Text('Already have an account?LOGIN',style: TextStyle(color: Colors.black),),
-            )
+            TextButton(onPressed: (){ Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Loginn()),
+            );}, child: Text('Already have an account?LOGIN',style: TextStyle(color: Colors.black),),
+            ),
+
     ],
     ),
       ),

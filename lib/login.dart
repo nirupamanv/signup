@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/sign.dart';
 class Loginn extends StatefulWidget {
   const Loginn({Key? key}) : super(key: key);
 
@@ -20,6 +21,7 @@ class _LoginnState extends State<Loginn> {
 
 
             SizedBox(height: 20,),
+
           Align(alignment: Alignment.centerLeft,child: Text('Email'),),
 
           TextField(
@@ -35,6 +37,7 @@ class _LoginnState extends State<Loginn> {
               enabledBorder: OutlineInputBorder(),
 
 
+
             ),
           ),
             SizedBox(height: 20,),
@@ -45,10 +48,14 @@ class _LoginnState extends State<Loginn> {
 
             SizedBox(height: 20,),
 
-            TextButton(onPressed: (){}, child: Text('Dont have an account?SIGN UP',style: TextStyle(color: Colors.black),),
+            TextButton(onPressed: (){ Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => User()),
+            );}, child: Text('Dont have an account?SIGN UP',style: TextStyle(color: Colors.black),),
             ),
             Expanded(child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5iSN4WDnIrdmrKtrxV8rFpPNExvrzqP4jQ&usqp=CAU',
              ))
+
 
     ],
       ),
